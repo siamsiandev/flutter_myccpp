@@ -10,4 +10,10 @@ class FlutterMyccpp {
     final String version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
+  static Future initialize(String privateKey, bool productionMode) async {
+    await _channel.invokeMethod('initialize', {
+      privateKey: privateKey,
+      productionMode: productionMode
+    });
+  }
 }
