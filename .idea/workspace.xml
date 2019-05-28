@@ -6,14 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a71c75a-e069-46cb-b5c3-b0b04c57f6d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_myccpp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_myccpp.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -29,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+            <state relative-caret-position="103">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6158#6159#0" expanded="true" />
@@ -43,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="88" selection-start-line="88" selection-end-line="88" selection-end-column="41" />
+            <state relative-caret-position="330">
+              <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -84,8 +77,8 @@
         <option value="$PROJECT_DIR$/android/build.gradle" />
         <option value="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/lib/flutter_myccpp.dart" />
-        <option value="$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java" />
         <option value="$PROJECT_DIR$/example/lib/main.dart" />
+        <option value="$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java" />
       </list>
     </option>
   </component>
@@ -277,7 +270,7 @@
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.3676732" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.3516874" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.3285968" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" weight="0.40319717" />
@@ -342,24 +335,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java">
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+        <state relative-caret-position="330">
+          <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6158#6159#0" expanded="true" />
-            <element signature="e#6192#6193#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="88" selection-start-line="88" selection-end-line="88" selection-end-column="41" />
+        <state relative-caret-position="103">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6158#6159#0" expanded="true" />
+            <element signature="e#6192#6193#0" expanded="true" />
           </folding>
         </state>
       </provider>
