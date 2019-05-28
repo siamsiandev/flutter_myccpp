@@ -29,5 +29,33 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name="com.ccpp.my2c2psdk.cores.My3DSActivity"
+            android:theme="@style/My2c2pSDK.Theme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- For 123 payment : eNETS (Direct Debit/Web Payment) Only -->
+                <!-- For demo server -->
+                <data
+                    android:scheme="my2c2p764764000001966"
+                    android:host="123" />
+                <!-- For demo server -->
+                <data
+                    android:scheme="my2c2p764764000001966"
+                    android:host="123" />
+                <!-- For prod server -->
+                <data
+                    android:scheme="my2c2p764764000001966"
+                    android:host="123" />
+                <!-- End -->
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.ccpp.my2c2psdk.cores.OTPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"/>
     </application>
 </manifest>

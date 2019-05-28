@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:async';
 
 import 'package:flutter/services.dart';
 
@@ -12,8 +13,11 @@ class FlutterMyccpp {
   }
   static Future initialize(String privateKey, bool productionMode) async {
     await _channel.invokeMethod('initialize', {
-      privateKey: privateKey,
-      productionMode: productionMode
+      'privateKey': privateKey,
+      'productionMode': productionMode
     });
+  }
+  static Future requestPayment(Map<dynamic, dynamic> params) async {
+    await _channel.invokeMethod('requestPayment', params);
   }
 }
