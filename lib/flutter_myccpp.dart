@@ -12,12 +12,15 @@ class FlutterMyccpp {
     return version;
   }
   static Future initialize(String privateKey, bool productionMode) async {
-    await _channel.invokeMethod('initialize', {
+    await _channel.invokeMethod('initialize', <String, dynamic>{
       'privateKey': privateKey,
       'productionMode': productionMode
     });
   }
-  static Future requestPayment(Map<dynamic, dynamic> params) async {
+  static Future requestPayment(Map<String, dynamic> params) async {
     await _channel.invokeMethod('requestPayment', params);
+  }
+  static Future requestAlternativePayment(Map<String, dynamic> params) async {
+    await _channel.invokeMethod('requestAlternativePayment', params);
   }
 }
