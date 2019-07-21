@@ -18,9 +18,9 @@ class FlutterMyccpp {
     });
   }
   static Future requestPayment(Map<String, dynamic> params) async {
-    await _channel.invokeMethod('requestPayment', params);
+    return await _channel.invokeMethod('requestPayment', params);
   }
   static Future requestAlternativePayment(Map<String, dynamic> params) async {
-    await _channel.invokeMethod('requestAlternativePayment', params);
+    return await _channel.invokeMethod('requestAlternativePayment', params);
   }
 }

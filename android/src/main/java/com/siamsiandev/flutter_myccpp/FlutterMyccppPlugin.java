@@ -14,6 +14,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 import com.ccpp.my2c2psdk.cores.*;
 
+import java.lang.reflect.Field;
 import java.util.HashMap;
 
 import static android.app.Activity.RESULT_CANCELED;
@@ -29,6 +30,10 @@ public class FlutterMyccppPlugin implements MethodCallHandler, PluginRegistry.Ac
     private My2c2pSDK sdk;
     private final Activity activity;
     private static final int REQUEST_SDK = 1;
+    private static final String ACTIVITY_DOES_NOT_EXIST = "ACTIVITY_DOES_NOT_EXIST";
+    private static final String PAYMENT_REQUEST_ERROR = "PAYMENT_REQUEST_ERROR";
+    private static final String NO_RESPONSE = "NO_RESPONSE";
+    private static final String TRANSACTION_CANCELED = "TRANSACTION_CANCELED";
     private Result result;
 
     public static void registerWith(Registrar registrar) {
@@ -56,7 +61,7 @@ public class FlutterMyccppPlugin implements MethodCallHandler, PluginRegistry.Ac
         } else if (call.method.equals("requestAlternativePayment")) {
             requestAlternativePayment(call.arguments());
         } else {
-            result.notImplemented();
+            this.result.notImplemented();
         }
     }
 
@@ -73,6 +78,7 @@ public class FlutterMyccppPlugin implements MethodCallHandler, PluginRegistry.Ac
             sendRequest();
         } catch (Exception e) {
             Log.e("Error", e.getMessage());
+            result.error(PAYMENT_REQUEST_ERROR, e.getMessage(), e);
         }
     }
 
@@ -82,7 +88,8 @@ public class FlutterMyccppPlugin implements MethodCallHandler, PluginRegistry.Ac
             setAlternativePaymentFields(params);
             sendRequest();
         } catch (Exception e) {
-
+            Log.e("Error", e.getMessage());
+            result.error(PAYMENT_REQUEST_ERROR, e.getMessage(), e);
         }
     }
 
@@ -134,6 +141,10 @@ public class FlutterMyccppPlugin implements MethodCallHandler, PluginRegistry.Ac
     }
 
     private void sendRequest() {
+        if (activity == null) {
+            result.error(ACTIVITY_DOES_NOT_EXIST, ACTIVITY_DOES_NOT_EXIST,"Activity doesn't exist");
+            return;
+        }
         Intent intent = new Intent(activity, com.ccpp.my2c2psdk.cores.My3DSActivity.class);
         intent.putExtra(My2c2pSDK.PARAMS, sdk);
         activity.startActivityForResult(intent, REQUEST_SDK);
@@ -144,6 +155,7 @@ public class FlutterMyccppPlugin implements MethodCallHandler, PluginRegistry.Ac
         if (requestCode == REQUEST_SDK) {
             if(resultCode == RESULT_CANCELED){
                 // response fail
+                result.error(TRANSACTION_CANCELED, TRANSACTION_CANCELED,"Transaction is canceled");
             } else if(resultCode == RESULT_OK) {
                 if (data != null) {
                     My2c2pResponse response = data.getExtras().getParcelable(My2c2pResponse.RESPONSE);
@@ -151,20 +163,56 @@ public class FlutterMyccppPlugin implements MethodCallHandler, PluginRegistry.Ac
                         if (response.getRespCode().equals("301")) {
                             // response fail
                             System.out.println(" transaction canceled" + resultCode);
+                            result.error(TRANSACTION_CANCELED, TRANSACTION_CANCELED,"Transaction is canceled");
                         }
                         // response success
                         Log.d("response", response.toString());
-
+                        HashMap<String, Object> resultMap = new HashMap<String, Object>();
+                        resultMap.put("version", response.getVersion());
+                        resultMap.put("timeStamp", response.getTimeStamp());
+                        resultMap.put("merchantID", response.getMerchantID());
+                        resultMap.put("respCode", response.getRespCode());
+                        resultMap.put("pan", response.getPan());
+                        resultMap.put("amount", response.getAmount());
+                        resultMap.put("uniqueTransactionCode", response.getUniqueTransactionCode());
+                        resultMap.put("tranRef", response.getTranRef());
+                        resultMap.put("approvalCode", response.getApprovalCode());
+                        resultMap.put("refNumber", response.getRefNumber());
+                        resultMap.put("dateTime", response.getDateTime());
+                        resultMap.put("eci", response.getEci());
+                        resultMap.put("status", response.getStatus());
+                        resultMap.put("failReason", response.getFailReason());
+                        resultMap.put("userDefined1", response.getUserDefined1());
+                        resultMap.put("userDefined2", response.getUserDefined2());
+                        resultMap.put("userDefined3", response.getUserDefined3());
+                        resultMap.put("userDefined4", response.getUserDefined4());
+                        resultMap.put("userDefined5", response.getUserDefined5());
+                        resultMap.put("storeCardUniqueID", response.getStoreCardUniqueID());
+                        resultMap.put("recurringUniqueID", response.getRecurringUniqueID());
+                        resultMap.put("hashValue", response.getHashValue());
+                        resultMap.put("ippPeriod", response.getIppPeriod());
+                        resultMap.put("ippInterestType", response.getIppInterestType());
+                        resultMap.put("ippInterestRate", response.getIppInterestRate());
+                        resultMap.put("ippMerchantAbsorbRate", response.getIppMerchantAbsorbRate());
+                        resultMap.put("paidChannel", response.getPaidChannel());
+                        resultMap.put("paidAgent", response.getPaidAgent());
+                        resultMap.put("paymentChannel", response.getPaymentChannel());
+                        resultMap.put("backendInvoice", response.getBackendInvoice());
+                        resultMap.put("issuerCountry", response.getIssuerCountry());
+                        resultMap.put("bankName", response.getBankName());
+                        resultMap.put("raw", response.getRaw());
+                        Log.d("response map", resultMap.toString());
+                        result.success(resultMap);
                     } else {
                         // response fail
+                        result.error(NO_RESPONSE, NO_RESPONSE, "No response data");
 
                     }
                 } else {
                     // response fail
-
+                    result.error(NO_RESPONSE, NO_RESPONSE, "No response data");
                 }
             }
-
         }
         return false;
     }

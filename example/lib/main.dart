@@ -64,22 +64,29 @@ class _MyAppState extends State<MyApp> {
                   color: Colors.amber,
                   textColor: Colors.white,
                   onPressed: () async{
-                    await FlutterMyccpp.requestPayment({
-                      'merchantID': '764764000001966',
-                      'secretKey': '24ABCC819638916E7DD47D09F2DEA4588FAE70636B085B8DE47A9592C4FD034F',
-                      'uniqueTransactionCode': '10004',
-                      'desc': 'product1',
-                      'amount': 2000.0,
-                      'currencyCode': '764' ,
-                      'paymentUI': false,
+                    try {
+                      var result = await FlutterMyccpp.requestPayment({
+                        'merchantID': '764764000001966',
+                        'secretKey': '24ABCC819638916E7DD47D09F2DEA4588FAE70636B085B8DE47A9592C4FD034F',
+                        'uniqueTransactionCode': '10150919233',
+                        'desc': 'product1',
+                        'amount': 1500.0,
+                        'currencyCode': '764' ,
+                        'paymentUI': false,
 
-                      'pan': '5105105105105100',
-                      'cardExpireMonth':12,
-                      'cardExpireYear':2019,
-                      'cardHolderName': 'Mr. John',
-                      'panCountry': 'TH',
-                      'request3DS': 'Y'
-                    });
+                        'pan': '5105105105105100',
+                        'cardExpireMonth':12,
+                        'cardExpireYear':2019,
+                        'cardHolderName': 'Mr. John',
+                        'cardHolderEmail': 'hello@gmail.com',
+                        'panCountry': 'TH',
+                        'request3DS': 'Y'
+                      });
+                      print(result);
+                    } on PlatformException catch(e){
+                      print("error");
+                      print(e.message);
+                    }
                   },
                 ),
                 FlatButton(
@@ -87,21 +94,26 @@ class _MyAppState extends State<MyApp> {
                   color: Colors.blue,
                   textColor: Colors.white,
                   onPressed: () async{
-                    await FlutterMyccpp.requestAlternativePayment({
-                      'merchantID': '764764000001966',
-                      'secretKey': '24ABCC819638916E7DD47D09F2DEA4588FAE70636B085B8DE47A9592C4FD034F',
-                      'uniqueTransactionCode': '100008',
-                      'desc': 'product1',
-                      'amount': 2100.0,
-                      'currencyCode': '764' ,
-                      'paymentUI': false,
-                      'cardHolderName': 'Mr. John',
-                      'cardHolderEmail': 'user@domain.com',
+                    try {
+                      await FlutterMyccpp.requestAlternativePayment({
+                        'merchantID': '764764000001966',
+                        'secretKey': '24ABCC819638916E7DD47D09F2DEA4588FAE70636B085B8DE47A9592C4FD034F',
+                        'uniqueTransactionCode': '10050',
+                        'desc': 'product1',
+                        'amount': 1.0,
+                        'currencyCode': '764' ,
+                        'paymentUI': false,
+                        'cardHolderName': 'Mr. John',
+                        'cardHolderEmail': 'user@domain.com',
 
-                      'paymentChannel': 'ONE_TWO_THREE',
-                      'agentCode': 'SCB',
-                      'channelCode': 'iBanking',
-                    });
+                        'paymentChannel': 'ONE_TWO_THREE',
+                        'agentCode': 'SCB',
+                        'channelCode': 'iBanking',
+                      });
+                    }on PlatformException catch(e){
+                      print("error");
+                      print(e.message);
+                    }
                   },
                 )
               ],

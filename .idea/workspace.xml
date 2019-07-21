@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a71c75a-e069-46cb-b5c3-b0b04c57f6d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_myccpp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_myccpp.dart" afterDir="false" />
@@ -28,22 +29,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="155" column="39" selection-start-line="155" selection-start-column="31" selection-end-line="155" selection-end-column="39" />
+            <state relative-caret-position="-154">
+              <caret line="159" column="35" lean-forward="true" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/flutter_myccpp.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#7648#7664#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,10 +42,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="102" column="46" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
+            <state relative-caret-position="150">
+              <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/flutter_myccpp.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,6 +69,8 @@
     <findStrings>
       <find>invokeMethod</find>
       <find>REQUEST_SDK</find>
+      <find>TRANSACTION_CANCELED</find>
+      <find>RESULT_CANCELED</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,12 +141,6 @@
             <path>
               <item name="flutter_myccpp" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_myccpp" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_myccpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_myccpp" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -234,11 +232,11 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.3676732" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.47957373" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.3285968" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" order="4" weight="0.29662523" />
-      <window_info anchor="bottom" id="Debug" order="5" />
+      <window_info anchor="bottom" id="Logcat" order="4" weight="0.08348135" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
@@ -296,30 +294,31 @@
     <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterMyccppPlugin.m">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="159" column="35" lean-forward="true" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7648#7664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_myccpp.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+        <state relative-caret-position="285">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="155" column="39" selection-start-line="155" selection-start-column="31" selection-end-line="155" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="102" column="46" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
+        <state relative-caret-position="150">
+          <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
