@@ -1,7 +1,7 @@
 name: flutter_myccpp
 description: 2c2p plugin for flutter
 version: 0.0.1
-author: siamsiandev (siamsiandev@gmail.com)
+author: siamsiandev <siamsiandev@gmail.com>
 homepage: https://github.com/siamsiandev/flutter_myccpp
 
 environment:
