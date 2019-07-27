@@ -1,3 +1,8 @@
+## 0.0.2
+
+* Support AndroidX
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Init Project
+
