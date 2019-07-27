@@ -1,3 +1,11 @@
+## 0.0.4
+
+* fix bug
+
+## 0.0.3
+
+* Refractor dependencies
+
 ## 0.0.2
 
 * Support AndroidX
