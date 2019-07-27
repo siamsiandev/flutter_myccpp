@@ -7,10 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a71c75a-e069-46cb-b5c3-b0b04c57f6d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_myccpp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_myccpp.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -29,21 +26,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-154">
-              <caret line="159" column="35" lean-forward="true" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
+            <state relative-caret-position="315">
+              <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7648#7664#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+            <state relative-caret-position="1054">
+              <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -54,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_myccpp.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="340">
               <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
@@ -85,6 +90,7 @@
         <option value="$PROJECT_DIR$/lib/flutter_myccpp.dart" />
         <option value="$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java" />
         <option value="$PROJECT_DIR$/example/lib/main.dart" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
       </list>
     </option>
   </component>
@@ -100,37 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="flutter_myccpp" type="58d84e3e:PackageViewProjectNode" />
-              <item name="flutter_myccpp_android" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="flutter_myccpp" type="58d84e3e:PackageViewProjectNode" />
-              <item name="flutter_myccpp_android" type="616d4139:PackageViewModuleNode" />
-              <item name="com.siamsiandev.flutter_myccpp" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="flutter_myccpp" type="58d84e3e:PackageViewProjectNode" />
-              <item name="flutter_myccpp_example_android" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="flutter_myccpp" type="58d84e3e:PackageViewProjectNode" />
-              <item name="flutter_myccpp_example_android" type="616d4139:PackageViewModuleNode" />
-              <item name="com.siamsiandev.flutter_myccpp_example" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="flutter_myccpp" type="58d84e3e:PackageViewProjectNode" />
-              <item name="flutter_myccpp_example_android" type="616d4139:PackageViewModuleNode" />
-              <item name="io.flutter.plugins" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,6 +142,37 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flutter_myccpp" type="58d84e3e:PackageViewProjectNode" />
+              <item name="flutter_myccpp_android" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="flutter_myccpp" type="58d84e3e:PackageViewProjectNode" />
+              <item name="flutter_myccpp_android" type="616d4139:PackageViewModuleNode" />
+              <item name="com.siamsiandev.flutter_myccpp" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="flutter_myccpp" type="58d84e3e:PackageViewProjectNode" />
+              <item name="flutter_myccpp_example_android" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="flutter_myccpp" type="58d84e3e:PackageViewProjectNode" />
+              <item name="flutter_myccpp_example_android" type="616d4139:PackageViewModuleNode" />
+              <item name="com.siamsiandev.flutter_myccpp_example" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="flutter_myccpp" type="58d84e3e:PackageViewProjectNode" />
+              <item name="flutter_myccpp_example_android" type="616d4139:PackageViewModuleNode" />
+              <item name="io.flutter.plugins" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,7 +228,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24615385" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24615385" />
       <window_info id="Captures" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -232,7 +238,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.47957373" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.47957373" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.3285968" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" weight="0.08348135" />
@@ -296,18 +302,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/android/src/main/java/com/siamsiandev/flutter_myccpp/FlutterMyccppPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="159" column="35" lean-forward="true" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
+        <state relative-caret-position="315">
+          <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7648#7664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_myccpp.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="340">
           <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -315,13 +330,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
