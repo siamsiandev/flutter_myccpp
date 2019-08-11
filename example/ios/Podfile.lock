@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_myccpp (0.0.1):
+    - Flutter
+    - my2c2pSDK
+  - my2c2pSDK (3.4.0)
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - flutter_myccpp (from `.symlinks/plugins/flutter_myccpp/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - my2c2pSDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  flutter_myccpp:
+    :path: ".symlinks/plugins/flutter_myccpp/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+  flutter_myccpp: 24b89db73fe08be2e3baa14ef43fe0d70c29314a
+  my2c2pSDK: becf2d554aa2095c5820e29ecec01f3893848956
+
+PODFILE CHECKSUM: 7fb83752f59ead6285236625b82473f90b1cb932
+
+COCOAPODS: 1.7.1
